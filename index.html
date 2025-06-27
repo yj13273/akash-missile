@@ -4,9 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akash Missile</title>
+  <link rel="icon" href="C:\akash-missile\assets\favicon-missile.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 </head>
 <body>
+<body>
+  <div id="page-wrapper">
   <header>
     <h1>Akash Missile</h1>
     <p>India’s Surface-to-Air Missile System</p>
@@ -16,139 +21,121 @@
     <ul>
       <li><a href="#intro">Introduction</a></li>
       <li><a href="#history">History</a></li>
-      <li class="dropdown">
-        <a href="#versions" class="dropbtn">Versions ▾</a>
-        <ul class="dropdown-content">
-        <li><a href="#" data-variant="variant-mk1">Akash Mk-I</a></li>
-        <li><a href="#" data-variant="variant-1s">Akash-1S</a></li>
-        <li><a href="#" data-variant="variant-prime">Akash Prime</a></li>
-        <li><a href="#" data-variant="variant-ng">Akash-NG</a></li>
-      </ul>
-    </li>
-
+      <li><a href="#versions">Versions</a></li>  
       <li><a href="#features">Features</a></li>
-      <li><a href="#working">Working</a></li>
+      <li><a href="#working-2">Working</a></li>
+    
+     <!-- <li><a href="#working">Working</a></li> -->
       <li><a href="#trajectory">Trajectory</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#references">References</a></li>
+     <!-- <li><a href="#gallery">Gallery</a></li> -->
+      <!---  <li><a href="#references">References</a></li> -->
     </ul>
   </nav>
 
+
   <main>
-   <section id="intro" class="section">
-  <h2>Introduction</h2>
-  <p>
-    The Akash Missile represents India’s ambition to achieve self-reliance in strategic defense systems. Designed as a shield against aerial threats, it plays a vital role in protecting high-value military assets and infrastructure from enemy aircraft, missiles, and unmanned aerial systems.
-  </p>
-  <p>
-    Akash was envisioned to close the gap between short-range tactical defenses and long-range strategic deterrence. By empowering the armed forces with mobile, multi-target air defense capability, it strengthens India’s layered missile defense doctrine and provides coverage for both static bases and dynamic formations.
-  </p>
-  <p>
-    What sets Akash apart is not just its missile, but the complete system — integrating surveillance, tracking, fire control, and engagement in a seamless loop. Built entirely with indigenous technologies, Akash reflects India's growing technological maturity in the defense sector.
-  </p>
-  <p>
-    Since its inception, the system has continually evolved to address emerging aerial threats, from legacy aircraft to next-generation stealth platforms and high-speed UAVs. As a result, Akash has become more than a missile — it's a platform for innovation, modernization, and strategic autonomy.
-  </p>
-</section>
+    <section id="intro" class="section">
+      <h2>Introduction</h2>
+      <p>
+        The Akash Missile represents India’s ambition to achieve self-reliance in strategic defense systems. Designed as a shield against aerial threats, it plays a vital role in protecting high-value military assets and infrastructure from enemy aircraft, missiles, and unmanned aerial systems.
+      </p>
+      <p>
+        Akash was envisioned to close the gap between short-range tactical defenses and long-range strategic deterrence. By empowering the armed forces with mobile, multi-target air defense capability, it strengthens India’s layered missile defense doctrine and provides coverage for both static bases and dynamic formations.
+      </p>
+      <p>
+        What sets Akash apart is not just its missile, but the complete system — integrating surveillance, tracking, fire control, and engagement in a seamless loop. Built entirely with indigenous technologies, Akash reflects India's growing technological maturity in the defense sector.
+      </p>
+      <p>
+        Since its inception, the system has continually evolved to address emerging aerial threats, from legacy aircraft to next-generation stealth platforms and high-speed UAVs. As a result, Akash has become more than a missile — it's a platform for innovation, modernization, and strategic autonomy.
+      </p>
+    </section>
 
-<section id="history" class="section">
-  <h2>Development Timeline</h2>
-  <div class="timeline-container">
+    <section id="history" class="section">
+      <h2>Development Timeline</h2>
+      <div class="timeline-container">
 
-    <div class="timeline-event left">
-      <div class="content">
-        <h3>1983 – IGMDP Launched</h3>
-        <p>The Indian government launches the Integrated Guided Missile Development Programme to develop five indigenous missiles — Prithvi, Agni, Trishul, Nag, and Akash.</p>
+        <div class="timeline-event left">
+          <div class="content">
+            <h3>1983 – IGMDP Launched</h3>
+            <p>The Indian government launches the Integrated Guided Missile Development Programme to develop five indigenous missiles — Prithvi, Agni, Trishul, Nag, and Akash.</p>
+          </div>
+        </div>
+
+        <div class="timeline-event right">
+          <div class="content">
+            <h3>1990 – First Test Flight</h3>
+            <p>Akash conducts its first successful test flight, initiating flight validation and design development.</p>
+          </div>
+        </div>
+
+        <div class="timeline-event left">
+          <div class="content">
+            <h3>2005–2006 – Interception Trials</h3>
+            <p>Akash demonstrates its ability to intercept multiple high-speed aerial targets simultaneously, validating radar coordination and missile agility.</p>
+          </div>
+        </div>
+
+        <div class="timeline-event right">
+          <div class="content">
+            <h3>Dec 2007 – IAF User Trials</h3>
+            <p>The Indian Air Force successfully completes 10 days of user trials at Chandipur, with all five interceptions hitting their targets.</p>
+          </div>
+        </div>
+
+        <div class="timeline-event left">
+          <div class="content">
+            <h3>2010 – Akash Mk-I Induction (IAF)</h3>
+            <p>Akash Mk-I is inducted into the Indian Air Force for operational air defense. The initial version provides medium-range surface-to-air defense capability.</p>
+          </div>
+        </div>
+
+        <div class="timeline-event right">
+          <div class="content">
+            <h3>May 2015 – Army Deployment</h3>
+            <p>The Indian Army begins deploying Akash Mk-I for mobile battlefield air defense, mounted on wheeled and tracked platforms.</p>
+          </div>
+        </div>
+
+        <div class="timeline-event left">
+          <div class="content">
+            <h3>May 2019 – Akash-1S Tested</h3>
+            <p>Akash-1S is successfully tested with an indigenous seeker, enhancing its ability to intercept smaller, faster threats such as cruise missiles and UAVs.</p>
+          </div>
+        </div>
+
+        <div class="timeline-event right">
+          <div class="content">
+            <h3>Jan 2021 – Akash-NG Maiden Test</h3>
+            <p>The next-generation Akash-NG is test-fired with a canister launch system and an active radar seeker. It features longer range, lighter design, and improved agility.</p>
+          </div>
+        </div>
+
+        <div class="timeline-event left">
+          <div class="content">
+            <h3>July 2021 – NG Follow-up Tests</h3>
+            <p>Akash-NG proves its effectiveness by intercepting high-speed aerial targets during follow-up validation trials.</p>
+          </div>
+        </div>
+
+        <div class="timeline-event right">
+          <div class="content">
+            <h3>Jan 2024 – NG UAV Intercept</h3>
+            <p>Akash-NG successfully intercepts a low-altitude, high-speed UAV, confirming its readiness for operational deployment in real-world scenarios.</p>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </section>
 
-    <div class="timeline-event right">
-      <div class="content">
-        <h3>1990 – First Test Flight</h3>
-        <p>Akash conducts its first successful test flight, initiating flight validation and design development.</p>
-      </div>
-    </div>
-
-    <div class="timeline-event left">
-      <div class="content">
-        <h3>2005–2006 – Interception Trials</h3>
-        <p>Akash demonstrates its ability to intercept multiple high-speed aerial targets simultaneously, validating radar coordination and missile agility.</p>
-      </div>
-    </div>
-
-    <div class="timeline-event right">
-      <div class="content">
-        <h3>Dec 2007 – IAF User Trials</h3>
-        <p>The Indian Air Force successfully completes 10 days of user trials at Chandipur, with all five interceptions hitting their targets.</p>
-      </div>
-    </div>
-
-    <div class="timeline-event left">
-      <div class="content">
-        <h3>2010 – Akash Mk-I Induction (IAF)</h3>
-        <p>Akash Mk-I is inducted into the Indian Air Force for operational air defense. The initial version provides medium-range surface-to-air defense capability.</p>
-      </div>
-    </div>
-
-    <div class="timeline-event right">
-      <div class="content">
-        <h3>May 2015 – Army Deployment</h3>
-        <p>The Indian Army begins deploying Akash Mk-I for mobile battlefield air defense, mounted on wheeled and tracked platforms.</p>
-      </div>
-    </div>
-
-    <div class="timeline-event left">
-      <div class="content">
-        <h3>May 2019 – Akash-1S Tested</h3>
-        <p>Akash-1S is successfully tested with an indigenous seeker, enhancing its ability to intercept smaller, faster threats such as cruise missiles and UAVs.</p>
-      </div>
-    </div>
-
-    <div class="timeline-event right">
-      <div class="content">
-        <h3>Jan 2021 – Akash-NG Maiden Test</h3>
-        <p>The next-generation Akash-NG is test-fired with a canister launch system and an active radar seeker. It features longer range, lighter design, and improved agility.</p>
-      </div>
-    </div>
-
-    <div class="timeline-event left">
-      <div class="content">
-        <h3>July 2021 – NG Follow-up Tests</h3>
-        <p>Akash-NG proves its effectiveness by intercepting high-speed aerial targets during follow-up validation trials.</p>
-      </div>
-    </div>
-
-    <div class="timeline-event right">
-      <div class="content">
-        <h3>Jan 2024 – NG UAV Intercept</h3>
-        <p>Akash-NG successfully intercepts a low-altitude, high-speed UAV, confirming its readiness for operational deployment in real-world scenarios.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-<section id="versions" class="section">
-  <h2>Akash Missile Variants</h2>
-  <p>The Akash missile family has evolved through multiple upgrades, each version improving upon range, precision, and operational flexibility to address modern aerial threats.</p>
-  <ul>
-    <li>
-      <strong><a href="mk1.html" target="_blank">Akash Mk-I:</a></strong>
-      The original version featuring a command-guided interception system and a range of up to 30 km. Inducted into the Indian Air Force and Army.
-    </li>
-    <li>
-      <strong><a href="1s.html" target="_blank">Akash-1S:</a></strong>
-      An improved version equipped with an indigenous seeker, enhancing accuracy against small and agile aerial targets like cruise missiles and drones.
-    </li>
-    <li>
-      <strong><a href="prime.html" target="_blank">Akash Prime:</a></strong>
-      Incorporates a refined RF seeker and improved performance in extreme weather and altitude, making it effective against low-altitude threats.
-    </li>
-    <li>
-      <strong><a href="ng.html" target="_blank">Akash-NG:</a></strong>
-      The next-generation system with a longer range (up to 80 km), AESA radar, canister launch, and multiple target engagement capabilities.
-    </li>
-  </ul>
-</section>
+    <section id="versions" class="section">
+      <h2>Akash Missile Variants</h2>
+      <ul>
+        <li><strong>Akash Mk-I:</strong> The original version featuring a command-guided interception system and a range of up to 30 km. Inducted into the Indian Air Force and Army.</li>
+        <li><strong>Akash-1S:</strong> An improved version equipped with an indigenous seeker, enhancing accuracy against small and agile aerial targets like cruise missiles and drones.</li>
+        <li><strong>Akash Prime:</strong> Incorporates a refined RF seeker and improved performance in extreme weather and altitude, making it effective against low-altitude threats.</li>
+        <li><strong>Akash-NG:</strong> The next-generation system with a longer range (up to 80 km), AESA radar, canister launch, and multiple target engagement capabilities.</li>
+      </ul>
+    </section>
 
     <section id="features" class="section">
       <h2>Key Features</h2>
@@ -163,66 +150,326 @@
       </ul>
     </section>
 
+<section id="working-2" class="section">
+  <h2>Working of Akash-NG Missile System</h2>
+
+  <div class="tab-container">
+    <div class="tabs">
+      <button class="tab active" data-tab="engagement">Engagement System</button>
+      <button class="tab" data-tab="architecture">System Architecture</button>
+    </div>
+
+    <!-- ENGAGEMENT SYSTEM TAB -->
+    <div class="tab-content" id="engagement">
+      <div class="accordion-container">
+
+        <!-- Engagement Accordion Items -->
+        <div class="accordion-item">
+          <button class="accordion-header">1. Target Acquisition <span class="accordion-arrow">&#9654;</span></button>
+          <div class="accordion-body">
+            <p>The Akash-NG missile system begins its engagement process with target detection using the indigenously developed Active Electronically Scanned Array (AESA) Multifunction Radar (MFR). Unlike passive radars, AESA enables:</p>
+            <ul>
+              <li>High refresh rate scanning for faster detection cycles</li>
+              <li>Simultaneous multi-target detection and tracking</li>
+              <li>Low Probability of Intercept (LPI) capability</li>
+              <li>X-band operation for high-resolution tracking of low-RCS targets</li>
+              <li>Its look-down/shoot-down capability enables tracking of low-flying aircraft despite ground clutter interference.</li>
+            </ul>
+            <p>Upon identifying a potential threat (within 80–100 km range), the radar passes tracking information to the Fire Control System (FCS).</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">2. Target Tracking & Threat Evaluation <span class="accordion-arrow">&#9654;</span></button>
+          <div class="accordion-body">
+            <p>Once detection is confirmed, 3D tracking (range, azimuth, elevation) begins instantly. The Battle Management Software (BMS) processes:</p>
+            <ul>
+              <li>Threat classification using parameters like altitude, velocity vector, and maneuver profile</li>
+              <li>Detection and analysis of electronic countermeasure (ECM) activity</li>
+              <li>Real-time threat prioritization through decision algorithms</li>
+              <li>Concurrent intercept planning for multiple high-priority targets</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">3. Fire Control & Launch Authorization <span class="accordion-arrow">&#9654;</span></button>
+          <div class="accordion-body">
+            <p>The Fire Control System (FCS), in coordination with the Weapon Control Computer (WCC), orchestrates the missile launch sequence. This process encompasses:</p>
+            <ul>
+              <li>Real-time trajectory computation using radar tracking data and engagement geometry</li>
+              <li>Comprehensive pre-launch diagnostics and health status verification of the missile</li>
+              <li>Launcher alignment based on target azimuth and elevation, followed by system-level launch authorization</li>
+            </ul>
+            <p>The entire sequence—from target detection to missile launch—is executed in under 15 seconds, ensuring rapid response to high-speed aerial threats.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">4. Missile Launch <span class="accordion-arrow">&#9654;</span></button>
+          <div class="accordion-body">
+            <p>The Akash-NG missile is vertically launched from a sealed, canisterized system designed for rapid deployment and survivability. This configuration offers:</p>
+            <ul>
+              <li>Low visual and infrared signature, minimizing detectability during launch</li>
+              <li>All-terrain mobility, enabling launch from rugged or remote battlefield locations</li>
+              <li>Dual-pulse solid-propellant motor, delivering sustained thrust and maneuverability throughout flight</li>
+              <li>Acceleration to speeds exceeding Mach 2.5 (857.5 m/s) within seconds, ensuring swift interception of high-velocity targets</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">5. Mid-Course Navigation <span class="accordion-arrow">&#9654;</span></button>
+          <div class="accordion-body">
+            <p>Mid-course navigation in Akash-NG integrates onboard autonomy with real-time ground-based updates:</p>
+            <ul>
+              <li>An Inertial Navigation System (INS) provides self-contained flight path control</li>
+              <li>A secure command data link transmits continuous updates from the fire control unit</li>
+              <li>Trajectory corrections are applied dynamically to counter target maneuvers</li>
+              <li>Designed for network-centric warfare, it is highly resilient to electronic countermeasures (ECM)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">6. Terminal Homing <span class="accordion-arrow">&#9654;</span></button>
+          <div class="accordion-body">
+            <p>In the final phase, the Akash-NG uses its Ka-band Active Radar Seeker to autonomously lock onto the target, enabling fire-and-forget capability. The seeker:</p>
+            <ul>
+              <li>Tracks fast, low-RCS, or maneuvering targets with high accuracy</li>
+              <li>Operates effectively under jamming and electronic countermeasures (ECM)</li>
+              <li>Continuously refines trajectory for a precise intercept</li>
+            </ul>
+            <p>This ensures high terminal accuracy and reliability, even in contested airspace.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">7. Proximity Kill & Detonation <span class="accordion-arrow">&#9654;</span></button>
+          <div class="accordion-body">
+            <p>On reaching 15–30 meters from the target:</p>
+            <ul>
+              <li>The proximity fuse triggers the warhead, initiating detonation</li>
+              <li>It disperses thousands of high-density, pre-fragmented metal shards at hypersonic speeds</li>
+              <li>This results in area-effect kinetic fragmentation, capable of neutralizing high-speed or stealth targets</li>
+              <li>Even near misses are lethal due to the sheer velocity and spread of the fragments</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- End #engagement tab-content -->
+
+    <!-- SYSTEM ARCHITECTURE TAB -->
+    <div class="tab-content hidden" id="architecture">
+      <div class="accordion-container">
+
+        <!-- AESA Radar -->
+        <div class="accordion-item">
+          <button class="accordion-header">1. AESA Radar (Active Electronically Scanned Array) <span class="accordion-arrow">&#9654;</span></button>
+          <div class="accordion-body">
+            <h4>🔍 Development and Features</h4>
+
+            <ul>
+              <li><strong>Type:</strong> Solid-state AESA, multifunction radar</li>
+              <li><strong>Band:</strong> X-band</li>
+              <li><strong>Detection Range:</strong> 80–100 km (fighter-class targets)</li>
+              <li><strong>Tracking:</strong> >100 simultaneous targets</li>
+              <li><strong>Scan Rate:</strong> Full 360° volume scan in &lt;1 sec</li>
+              <li><strong>ECCM & LPI:</strong> Frequency hopping, agile beam steering, and Low Probability of Intercept</li>
+            </ul>
+
+            <h4>🚀 Mobile Integration</h4>
+            <p>The radar is mounted on a high-mobility vehicle as part of a canisterized SAM system, enabling rapid deployment, 360° coverage, and shoot-and-scoot capabilities.</p>
+
+            <h4>🎯 Operational Role</h4>
+            <p>Acts as the primary sensor node, linking real-time data to the Fire Control Center and BMS for autonomous engagements.</p>
+
+          
+          </div>
+        </div>
+
+        <!-- FCC -->
+        <div class="accordion-item">
+          <button class="accordion-header">2. Fire Control Center (FCC) <span class="accordion-arrow">&#9654;</span></button>
+          <div class="accordion-body">
+            <h4>🔍 Development & Role</h4>
+            <p>The FCC forms the real-time brain of the Akash-NG kill chain. It integrates targeting input from AESA radar and executes fire coordination via the WCC.</p>
+            <h4>📊 Capabilities</h4>
+            <ul>
+              <li><strong>Threat Evaluation:</strong> Based on velocity, angle-of-approach, RCS</li>
+              <li><strong>Automation:</strong> Auto-launch decision system in under 5 seconds</li>
+              <li><strong>Connectivity:</strong> Encrypted data links to radar and launchers</li>
+            </ul>
+            <h4>⚙️ Improvements Over Mk-I</h4>
+            <ul>
+              <li>More automated than Akash Mk-I’s semi-manual FCC</li>
+              <li>AI-aided engagement logic improves SSKP and response time</li>
+              <li>Fewer operators required due to digital control systems</li>
+            </ul>
+            <h4>🎯 Operational Role</h4>
+            <p>Central node that computes fire solutions and issues launch orders to the WCC, allowing for real-time, coordinated SAM defense.</p>
+          </div>
+        </div>
+
+        <!-- BMS -->
+        <div class="accordion-item">
+          <button class="accordion-header">3. Battle Management Software (BMS) <span class="accordion-arrow">&#9654;</span></button>
+          <div class="accordion-body">
+            <h4>🔍 Purpose & Evolution</h4>
+            <p>The BMS software suite consolidates sensor data from AESA, IFF, and command links to manage threat prioritization and engagement orchestration.</p>
+            <h4>📊 Features</h4>
+            <ul>
+              <li>Can process 200+ airborne targets simultaneously</li>
+              <li>Real-time fusion of radar, electro-optical, and satellite inputs</li>
+              <li>AI-based threat classification and intercept prediction</li>
+            </ul>
+            <h4>⚙️ Improvements Over Previous Systems</h4>
+            <ul>
+              <li>Network-centric warfare ready, unlike standalone Mk-I control loops</li>
+              <li>Encrypted cloud sync between mobile and static nodes</li>
+              <li>Resistant to EW and cyber attacks</li>
+            </ul>
+            <h4>🎯 Operational Role</h4>
+            <p>Coordinates inputs and relays processed threat maps to FCC, allowing seamless transition from detection to launch in networked environments.</p>
+          </div>
+        </div>
+
+        <!-- WCC -->
+        <div class="accordion-item">
+          <button class="accordion-header">4. Weapon Control Computer (WCC) <span class="accordion-arrow">&#9654;</span></button>
+          <div class="accordion-body">
+            <h4>🔍 System Function</h4>
+            <p>The WCC acts as the final execution engine, issuing commands to missile launchers and ensuring correct sequencing, diagnostics, and uplink feedback.</p>
+            <h4>📊 Technical Specs</h4>
+            <ul>
+              <li><strong>Interface:</strong> With launcher, missile telemetry, and FCC</li>
+              <li><strong>Execution Time:</strong> Launch command issued within milliseconds</li>
+              <li><strong>Command Uplink:</strong> Enables mid-course correction via secure data link</li>
+            </ul>
+            <h4>⚙️ Advancements Over Mk-I</h4>
+            <ul>
+              <li>Supports multi-type missiles like Akash-NG & QR-SAM</li>
+              <li>Modular, programmable architecture for future updates</li>
+              <li>Redundant fail-safes for safety-critical operations</li>
+            </ul>
+            <h4>🎯 Operational Role</h4>
+            <p>Acts as the direct link between digital fire control and missile launch hardware, guaranteeing precise, timed, and safe execution of intercepts.</p>
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- End #architecture tab-content -->
+  </div>
+</section>
+
+<!---
     <section id="working" class="section">
-      <h2>How It Works</h2>
-      <p>
-        Akash uses command guidance, where radar tracks both target and missile. Ground systems send real-time corrections to guide the missile.
-        A proximity fuse detonates near the target, maximizing hit probability.
-      </p>
-    </section>
+  <h2>How It Works</h2>
+
+  <div class="model-wrapper" style="position: relative; width: 100%; height: 500px;">
+  <model-viewer 
+    src="assets/akash-missile.glb"
+    alt="3D model of Akash missile"
+    auto-rotate 
+    camera-controls 
+    ar
+    exposure="1"
+    shadow-intensity="1"
+    style="width: 100%; height: 100%;"
+  >
+  </model-viewer>
+
+  <div class="annotation-container">
+    <div class="annotation-label">
+      <span class="arrow"></span>
+      <span class="label-text">Warhead</span>
+    </div>
+  </div>
+</div>
+
+
+  <p>This interactive model of the Akash missile lets you explore its components. Click on the labels to learn more about each part.</p>
+</section>
+--->
 
     <section id="trajectory" class="section">
-      <h2>Missile Trajectory</h2>
+        <h2>Missile Trajectory of Akash-NG</h2>
+  <p>
+    The Akash-NG missile follows a sophisticated trajectory composed of several critical flight phases designed for maximum efficiency and interception probability.
+  </p>
+
+  <div class="trajectory-container">
+
+    <div class="trajectory-phase">
+      <h4>🚀 1. Vertical Boost Phase</h4>
       <p>
-        The Akash missile follows a semi-ballistic path. It ascends post-launch, then uses continuous radar updates to adjust its flight mid-air until impact.
+        Upon launch from a canisterized system, the missile initiates a vertical ascent to quickly clear the launcher and surrounding terrain, reducing vulnerability to counterfire.
       </p>
-    </section>
+    </div>
 
-    <section id="gallery" class="section">
-      <h2>Gallery</h2>
-      <img src="assets/akash1.jpg" alt="Akash missile launch" class="fade-in" width="300">
-      <img src="assets/akash2.jpg" alt="Launcher vehicle" class="fade-in" width="300">
-      <img src="assets/akash3.jpg" alt="Radar system" class="fade-in" width="300">
-      <img src="assets/akash4.jpg" alt="Field deployment" class="fade-in" width="300">
-    </section>
+    <div class="trajectory-phase">
+      <h4>📈 2. Attitude Adjustment & Pitch-Over</h4>
+      <p>
+        Using onboard gyros and Inertial Navigation System (INS), the missile performs a controlled pitch-over maneuver toward the predicted intercept point.
+      </p>
+    </div>
 
+    <div class="trajectory-phase">
+      <h4>🧭 3. Mid-Course Guidance</h4>
+      <p>
+        During this phase, ground-based radar data and onboard INS provide updated navigation commands via secure datalink, allowing real-time trajectory corrections.
+      </p>
+    </div>
+
+    <div class="trajectory-phase">
+      <h4>🎯 4. Terminal Homing</h4>
+      <p>
+        The onboard Active Radar Seeker activates in the final 10–15 km, autonomously locking onto the target and adjusting the flight path for a direct hit using proportional navigation.
+      </p>
+    </div>
+
+    <div class="trajectory-phase">
+      <h4>💥 5. Intercept & Detonation</h4>
+      <p>
+        At proximity (15–30 m), the proximity fuse activates, detonating the warhead and dispersing high-velocity fragments to neutralize even highly maneuverable or stealth targets.
+      </p>
+    </div>
+
+    <div class="image-container">
+    <img src="assets/graph.png" alt="Akash-NG Trajectory Graph">
+  </div>
+    <!--
+      <div class="trajectory-chart-wrapper">
+    <canvas id="trajectoryChart"></canvas>
+  </div>
+  <p class="caption">
+    Diagram of Akash‑NG’s flight path: boost → mid‑course → terminal dive.
+  </p>
+  --->
+
+  </div>
+  </section>
+
+    <!---
     <section id="references" class="section">
       <h2>References</h2>
       <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Akash_(missile)">Wikipedia – Akash Missile</a></li>
+        <li><a href="https://en.  wikipedia.org/wiki/Akash_(missile)">Wikipedia – Akash Missile</a></li>
         <li><a href="https://www.drdo.gov.in/">DRDO Official Site</a></li>
         <li><a href="https://www.bharat-rakshak.com/">Bharat Rakshak</a></li>
       </ul>
     </section>
-    <section id="versions" class="section">
-  <h2>Missile Variants</h2>
-  <div id="variant-content">
-
-    <div id="variant-mk1" class="variant hidden">
-      <h3>Akash Mk-I</h3>
-      <p>The initial Akash version developed under IGMDP with command guidance and deployment in both IAF and Army.</p>
-    </div>
-
-    <div id="variant-1s" class="variant hidden">
-      <h3>Akash-1S</h3>
-      <p>Enhanced with an RF seeker for better target tracking and accuracy against UAVs and cruise missiles.</p>
-    </div>
-
-    <div id="variant-prime" class="variant hidden">
-      <h3>Akash Prime</h3>
-      <p>Improved seeker and cold-weather performance, optimized for high-altitude terrain and Army use.</p>
-    </div>
-
-    <div id="variant-ng" class="variant hidden">
-      <h3>Akash-NG</h3>
-      <p>Next-gen version with 70–80 km range, AESA radar, and canister launch system for rapid deployment.</p>
-    </div>
-
-  </div>
-</section>
-
   </main>
 
+--->
+<!---
+<label class="theme-switch" data-tooltip="Toggle Dark Mode">
+  <input type="checkbox" id="theme-toggle" />
+  <span class="slider"></span>
+</label>
+--->
   <script src="script.js"></script>
+ </div>
 </body>
 </html>
